@@ -1,9 +1,11 @@
 package hei.group.connexionbase.connexionbase;
 
+import org.springframework.stereotype.Component;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
+@Component
 public class DataBaseConnexion {
     final static String URL = "jdbc:postgresql://localhost:5432/todo";
     final static String USER = "postgres";
